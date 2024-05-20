@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>rabinin.mp3</file>
+        <file>v1.wav</file>
+        <file>v2.wav</file>
+        <file>v3.wav</file>
+        <file>v1_1.wav</file>
+        <file>v2_1.wav</file>
+        <file>v3_1.wav</file>
+        <file>v1_2.wav</file>
+        <file>out.wav</file>
+        <file>start.wav</file>
+        <file>voice/A.wav</file>
+        <file>voice/all.wav</file>
+        <file>voice/C.wav</file>
+        <file>voice/D.wav</file>
+        <file>voice/E.wav</file>
+        <file>voice/F.wav</file>
+        <file>voice/G.wav</file>
+        <file>chord/C_A.wav</file>
+        <file>chord/C_B.wav</file>
+        <file>chord/C_C.wav</file>
+        <file>chord/C_CH.wav</file>
+        <file>chord/C_D.wav</file>
+        <file>chord/C_E.wav</file>
+        <file>chord/C_F.wav</file>
+        <file>chord/C_G.wav</file>
+        <file>voice/CH.wav</file>
+        <file>voice/DH.wav</file>
+        <file>voice/EH.wav</file>
+        <file>voice/FH.wav</file>
+        <file>voice/GH.wav</file>
+        <file>voice/B.wav</file>
+    </qresource>
+    <qresource prefix="/picture">
+        <file>sdmiku.png</file>
+        <file>mikulogo.png</file>
+    </qresource>
+</RCC>
