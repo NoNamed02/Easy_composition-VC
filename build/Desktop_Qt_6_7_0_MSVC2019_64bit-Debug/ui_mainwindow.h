@@ -119,6 +119,7 @@ public:
     QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
+    QPushButton *voice_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -140,7 +141,7 @@ public:
         pushButton_3->setGeometry(QRect(670, 260, 201, 51));
         sd_miku = new QLabel(centralwidget);
         sd_miku->setObjectName("sd_miku");
-        sd_miku->setGeometry(QRect(670, 380, 200, 200));
+        sd_miku->setGeometry(QRect(670, 320, 200, 200));
         sd_miku->setAutoFillBackground(true);
         main_text = new QTextBrowser(centralwidget);
         main_text->setObjectName("main_text");
@@ -567,8 +568,8 @@ public:
         C7_1->setAlignment(Qt::AlignCenter);
         voice = new QPushButton(centralwidget);
         voice->setObjectName("voice");
-        voice->setGeometry(QRect(660, 590, 211, 51));
-        voice->setFont(font2);
+        voice->setGeometry(QRect(670, 580, 201, 51));
+        voice->setFont(font1);
         label = new QLabel(centralwidget);
         label->setObjectName("label");
         label->setGeometry(QRect(890, 570, 181, 61));
@@ -587,6 +588,10 @@ public:
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName("label_3");
         label_3->setGeometry(QRect(1080, 570, 181, 61));
+        voice_2 = new QPushButton(centralwidget);
+        voice_2->setObjectName("voice_2");
+        voice_2->setGeometry(QRect(670, 520, 201, 51));
+        voice_2->setFont(font1);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -651,8 +656,8 @@ public:
         s8_4->setText(QCoreApplication::translate("MainWindow", "(S)", nullptr));
         s8_3->setText(QCoreApplication::translate("MainWindow", "(S)", nullptr));
         text->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:700;\">\354\202\254\354\232\251\353\262\225</span></p></body></html>", nullptr));
-        text_2->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:11pt;\">1. [n\353\217\204 \355\231\224\354\235\214 \354\203\235\354\204\261]\354\235\204 \353\210\214\353\237\254 \355\231\224\354\235\214\354\235\204 \354\203\235\354\204\261\355\225\251\353\213\210\353\213\244<br/><br/>2. [\354\275\224\353\223\234 \354\203\235\354\204\261]\354\235\204 \353\210\214\353\237\254 \353\260\260\352\262\275 \354\275\224\353\223\234\353\245\274 \354\203\235\354\204\261\355\225\251\353\213\210\353\213\244<br/><br/>3. [\353\251\234\353\241\234\353\224\224 \354\203\235\354\204\261]\354\235\204 \353\210\214\353\237\254 \353\251\234\353\241\234\353\224\224\353\245\274 \354\203\235\354\204\261\355\225\251\353\213\210\353\213\244</span></p><p><br/><span style=\" font-size:11pt;\">4. \353\223\244\354\226\264\353\263\264\352\270\260\353\245\274 \353\210\214\353\237\254 \353\251\234\353\241\234\353\224\224\353\245\274 \353\223\244\354\226\264\353\264\205\353\213\210\353\213\244</span></p><p><br/></p><p><span style=\" font-size:11pt;\">\353\247\214"
-                        "\354\225\275, \354\236\220\354\213\240\354\235\264 \354\233\220\355\225\230\353\212\224 \352\263\241\354\235\264 \353\202\230\354\230\244\354\247\200 \354\225\212\354\225\230\354\235\204 \352\262\275\354\232\260</span></p><p><span style=\" font-size:11pt;\">\355\225\264\353\213\271\353\220\230\353\212\224 \354\203\235\354\204\261 \353\262\204\355\212\274\354\235\204 \353\213\244\354\213\234 \353\210\214\353\237\254 \354\236\254\354\203\235\354\204\261\355\225\251\353\213\210\353\213\244.</span></p></body></html>", nullptr));
+        text_2->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:11pt;\">1. [n\353\217\204 \355\231\224\354\235\214 \354\203\235\354\204\261]\354\235\204 \353\210\214\353\237\254 \355\231\224\354\235\214\354\235\204 \354\203\235\354\204\261\355\225\251\353\213\210\353\213\244<br/><br/>2. [\354\275\224\353\223\234 \354\203\235\354\204\261]\354\235\204 \353\210\214\353\237\254 \353\260\260\352\262\275 \354\275\224\353\223\234\353\245\274 \354\203\235\354\204\261\355\225\251\353\213\210\353\213\244<br/><br/>3. [\353\251\234\353\241\234\353\224\224 \354\203\235\354\204\261]\354\235\204 \353\210\214\353\237\254 \353\251\234\353\241\234\353\224\224\353\245\274 \354\203\235\354\204\261\355\225\251\353\213\210\353\213\244</span></p><p><br/><span style=\" font-size:11pt;\">4. \353\223\244\354\226\264\353\263\264\352\270\260\353\245\274 \353\210\214\353\237\254 \354\275\224\353\223\234, \353\251\234\353\241\234\353\224\224\353\245\274 \353\223\244\354\226\264\353\264\205\353\213\210\353\213\244</span></p><p><br/></p><p><span style=\" fon"
+                        "t-size:11pt;\">\353\247\214\354\225\275, \354\236\220\354\213\240\354\235\264 \354\233\220\355\225\230\353\212\224 \352\263\241\354\235\264 \353\202\230\354\230\244\354\247\200 \354\225\212\354\225\230\354\235\204 \352\262\275\354\232\260</span></p><p><span style=\" font-size:11pt;\">\355\225\264\353\213\271\353\220\230\353\212\224 \354\203\235\354\204\261 \353\262\204\355\212\274\354\235\204 \353\213\244\354\213\234 \353\210\214\353\237\254 \354\236\254\354\203\235\354\204\261\355\225\251\353\213\210\353\213\244.</span></p></body></html>", nullptr));
         out_btn->setText(QCoreApplication::translate("MainWindow", "OUT", nullptr));
         code0->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>", nullptr));
         code1->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>", nullptr));
@@ -702,10 +707,11 @@ public:
         C7_2->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>", nullptr));
         C7_4->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>", nullptr));
         C7_1->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>", nullptr));
-        voice->setText(QCoreApplication::translate("MainWindow", "\353\223\244\354\226\264\353\263\264\352\270\260", nullptr));
+        voice->setText(QCoreApplication::translate("MainWindow", "\353\251\234\353\241\234\353\224\224 \353\223\244\354\226\264\353\263\264\352\270\260", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Thank to ", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "Make by Raitia / NoNamed 02", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "Made by Raitia / NoNamed02", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        voice_2->setText(QCoreApplication::translate("MainWindow", "\354\275\224\353\223\234 \353\223\244\354\226\264\353\263\264\352\270\260", nullptr));
     } // retranslateUi
 
 };

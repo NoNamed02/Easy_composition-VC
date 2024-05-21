@@ -49,6 +49,8 @@ private slots:
     void playNextMelody_ex();
 
 
+    void on_voice_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     //QMediaPlayer *p_voice;

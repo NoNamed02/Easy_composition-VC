@@ -222,10 +222,12 @@ MainWindow::MainWindow(QWidget *parent)
     ui->pushButton_2->setStyleSheet(disabledStyle);
     ui->pushButton_3->setStyleSheet(disabledStyle);
     ui->voice->setStyleSheet(disabledStyle);
+    ui->voice_2->setStyleSheet(disabledStyle);
     ui->pushButton_2->setEnabled(false);
     ui->pushButton_3->setEnabled(false);
 
     ui->voice->setEnabled(false);
+    ui->voice_2->setEnabled(false);
     p_start->play();
 }
 
@@ -275,6 +277,7 @@ void MainWindow::on_pushButton_2_clicked() // 배경 코드
         v2_1->play();
     is_chord = true;
     ui->pushButton_3->setEnabled(true);
+    ui->voice_2->setEnabled(true);
 
     Code[0] = make_chord(code[0]);
     Code[1] = make_chord(code[1]);
@@ -662,20 +665,27 @@ void MainWindow::on_voice_clicked()
 {
     // 기존 연결을 해제합니다.
     disconnect(p_voice, &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged);
-    disconnect(p_chord, &QMediaPlayer::mediaStatusChanged, this, &MainWindow::_handleMediaStatusChanged);
 
     // 새로운 연결을 설정합니다.
     connect(p_voice, &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged);
-    connect(p_chord, &QMediaPlayer::mediaStatusChanged, this, &MainWindow::_handleMediaStatusChanged);
 
     // 인덱스를 초기화합니다.
-    chordIndex = 0;
     currentMelodyIndex = 0;
 
     // 첫 멜로디와 코드를 재생합니다.
     playNextMelody();
     //_playNextMelody();
 }
+
+void MainWindow::on_voice_2_clicked()
+{
+
+    disconnect(p_chord, &QMediaPlayer::mediaStatusChanged, this, &MainWindow::_handleMediaStatusChanged);
+    connect(p_chord, &QMediaPlayer::mediaStatusChanged, this, &MainWindow::_handleMediaStatusChanged);
+    chordIndex = 0;
+    _playNextMelody();
+}
+
 
 void MainWindow::handleMediaStatusChanged(QMediaPlayer::MediaStatus status)
 {
@@ -765,6 +775,7 @@ void MainWindow::_handleMediaStatusChanged(QMediaPlayer::MediaStatus stat)
         }
     }
 }
+
 
 void MainWindow::_playNextMelody()
 {
