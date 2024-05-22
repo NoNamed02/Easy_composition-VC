@@ -7,6 +7,8 @@
 __사용법, 설명 영상__
 
 
+[![Video Label](http://img.youtube.com/vi/J--dPXvLvzY/0.jpg)](https://youtu.be/J--dPXvLvzY)
+
 __사용언어__
 
 C++
