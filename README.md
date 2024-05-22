@@ -1,7 +1,12 @@
 간단 작곡프로그램 프로젝트
 
-
 [![Video Label](http://img.youtube.com/vi/vzqXBGy0Ciw/0.jpg)](https://youtu.be/vzqXBGy0Ciw)
+
+
+
+__사용법, 설명 영상__
+
+[![Video Label](http://img.youtube.com/vi/J--dPXvLvzY/0.jpg)](https://youtu.be/J--dPXvLvzY)
 
 
 __사용언어__
