@@ -10,7 +10,7 @@ __데모 영상__
 
 __사용법, 설명 영상__
 
-[![Video Label](http://img.youtube.com/vi/gw9_X7hacZU/0.jpg)](https://youtu.be/gw9_X7hacZU)
+[![Video Label](http://img.youtube.com/vi/AYiliMPmYZI/0.jpg)](https://youtu.be/AYiliMPmYZI)
 
 
 
