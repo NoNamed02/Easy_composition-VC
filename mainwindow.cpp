@@ -69,6 +69,7 @@ MainWindow::MainWindow(QWidget *parent)
     QPixmap score("C:/Users/Yukari/Desktop/ezc/c5.png");
     QPixmap s("C:/Users/Yukari/Desktop/ezc/s2_1.png");
     QPixmap mikulogo("C:/Users/Yukari/Documents/EASY_Composition/mikulogo.png");
+    QPixmap mainname("C:/Users/Yukari/Desktop/ezc/main-name.png");
 
     //////////////////음악 관련/////////////////////////////
     //QMediaPlayer * music = new QMediaPlayer();
@@ -130,6 +131,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_3->setPixmap(mikulogo.scaled(180,60));
     ui->score1->setPixmap(score);
     ui->score2->setPixmap(score);
+    ui->label_4->setPixmap(mainname.scaled(800,150));
 
     /*
     음계 기록용 라인임
