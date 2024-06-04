@@ -35,5 +35,9 @@
     <qresource prefix="/picture">
         <file>sdmiku.png</file>
         <file>mikulogo.png</file>
+        <file>../../Desktop/ezc/main-name.png</file>
+        <file>s2_1.png</file>
+        <file>main-name.png</file>
+        <file>c5.png</file>
     </qresource>
 </RCC>
