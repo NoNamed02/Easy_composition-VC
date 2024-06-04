@@ -65,11 +65,12 @@ MainWindow::MainWindow(QWidget *parent)
 {
     srand((unsigned)time(NULL));
     ui->setupUi(this);
-    QPixmap sdmiku("C:/Users/Yukari/Desktop/ezc/sdmiku.png");
-    QPixmap score("C:/Users/Yukari/Desktop/ezc/c5.png");
-    QPixmap s("C:/Users/Yukari/Desktop/ezc/s2_1.png");
-    QPixmap mikulogo("C:/Users/Yukari/Documents/EASY_Composition/mikulogo.png");
-    QPixmap mainname("C:/Users/Yukari/Desktop/ezc/main-name.png");
+    //QPixmap sdmiku("C:/Users/Yukari/Desktop/ezc/sdmiku.png");
+    QPixmap sdmiku(":picture/sdmiku.png");
+    QPixmap score(":picture/c5.png");
+    QPixmap s(":picture/s2_1.png");
+    QPixmap mikulogo(":picture/mikulogo.png");
+    QPixmap mainname(":picture/main-name.png");
 
     //////////////////음악 관련/////////////////////////////
     //QMediaPlayer * music = new QMediaPlayer();
